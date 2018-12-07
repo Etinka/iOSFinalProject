@@ -9,14 +9,16 @@
 import Foundation
 
 class Model{
-
+    
     static let instance:Model = Model()
-
+    
     var modelFirebase = FirebaseModel()
     
+    func stop(){
+        modelFirebase.stop()
+    }
     
     func getAllProperties(callback: @escaping ([Property]) -> Void){
         modelFirebase.getAllProperties(callback: callback)
     }
-
 }

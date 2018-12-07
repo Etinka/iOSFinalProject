@@ -9,6 +9,10 @@ target 'iOSFinalProject' do
 
 	pod 'Firebase/Core'
 	pod 'Firebase/Database'
+    pod 'Firebase/Firestore'
+    pod 'FirebaseUI/Auth'
+    pod 'FirebaseUI/Phone'
+    pod 'FirebaseUI/Google'
 
 
   target 'iOSFinalProjectTests' do

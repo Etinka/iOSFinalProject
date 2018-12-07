@@ -9,12 +9,19 @@
 import Foundation
 
 class Property{
-    let id: Int
+    let id: NSNumber
     let address: String
     
-    init(_id: Int, _address: String) {
+    init(_id: NSNumber, _address: String) {
         id = _id
         address = _address
     }
+    
+    init(data:[String: Any]){
+        id = data["id"] as! NSNumber
+        address = data["address"] as! String
+    }
+    
+    
     
 }
